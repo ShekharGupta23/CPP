@@ -1,0 +1,20 @@
+using namespace std;
+#include <bits/stdc++.h>
+#include <iostream>
+int main()
+{
+    int n=5;
+    for (int i = n; i >= 1; --i) {
+        for (int k = 0; k < n - i; ++k) {
+            cout << "  ";
+        }
+        for (int j = i; j <= 2 * i - 1; ++j) {
+            cout << "* ";
+        }
+        for (int j = 0; j < i - 1; ++j) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
